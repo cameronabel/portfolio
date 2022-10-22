@@ -1,7 +1,6 @@
 .body-container {
   width: calc(50% + 320px);
   border: 2px solid green;
-  padding: 4px;
   box-sizing: border-box;
   margin: auto;
   overflow: hidden;
@@ -39,11 +38,25 @@
   width: 110px;
   float: left;
   text-align: center;
-  color: #707070;
-  font-weight: 400;
+  color: #606060;
   font-family: "Arial";
 }
 
 .navbar ul a:hover {
   font-weight: 700;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eeeeee;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 50%;
+  top: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
