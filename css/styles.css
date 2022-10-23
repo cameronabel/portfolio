@@ -13,6 +13,9 @@ body {
   overflow: hidden;
   top: 30px;
   padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .shaded {
@@ -121,8 +124,9 @@ body {
   padding: 5px;
   display: inline-block;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 40px;
+  font-size: 20;
 }
 
 .centered {
@@ -130,6 +134,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  text-align: center;
 }
 
 h1 {
@@ -138,18 +143,38 @@ h1 {
   margin-bottom: 50px;
 }
 
-.column-l {
+.column-narrow-l {
   width: 35%;
   float: left;
-  padding-left: 10%;
+  padding-left: 8%;
+  text-align: justify;
+  line-height: 130%;
+}
+
+.column-narrow-r {
+  width: 35%;
+  float: right;
+  padding-right: 8%;
+  text-align: justify;
+  line-height: 130%;
+}
+
+.column-l {
+  width: 50%;
+  float: left;
   text-align: justify;
   line-height: 130%;
 }
 
 .column-r {
-  width: 35%;
+  width: 50%;
   float: right;
-  padding-right: 10%;
   text-align: justify;
   line-height: 130%;
+}
+
+.right-img {
+  display: flex;
+  width: 90%;
+  margin: 0 auto
 }
