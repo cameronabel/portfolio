@@ -1,9 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .body-container {
-  width: calc(50% + 320px);
-  border: 2px solid green;
+  width: calc(60% + 320px);
   box-sizing: border-box;
   margin: auto;
   overflow: hidden;
+  top: 30px;
+  background-color: #f8f8f8;
 }
 
 .logo {
@@ -16,11 +23,12 @@
   width: calc(50% + 320px);
   padding: 50px;
   margin: auto;
+  margin-top: 30px;
 }
 
 .navbar {
   width: 460px;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 .navbar ul {
@@ -50,7 +58,7 @@
   display: none;
   position: absolute;
   background-color: #eeeeee;
-  min-width: 120px;
+  min-width: 110px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   left: 50%;
@@ -59,4 +67,48 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover .dropdown-content li {
+  display: block;
+  margin: auto;
+}
+
+.banner {
+  height: 600px;
+  background: url("../img/code.jpg");
+  background-repeat: no-repeat;
+  background-color: #1e1e1e;
+  background-position: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.banner img {
+  height: 600px;
+  margin: auto;
+  display: block;
+}
+
+#txt-overlay {
+  position: absolute;
+  top: 36.5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 5%;
+  right: 5%;
+  border-radius: 10px;
+  font-family: "Arial";
+  font-weight: 500;
+  color: #033126;
+  text-align: center;
+  padding: 25px;
+  font-size: 26;
+  margin: 0 auto;
+}
+
+.tag {
+  background-color: #077C61;
+  color: white;
 }
