@@ -225,7 +225,8 @@ ol li img {
   display: block;
   width: 30vw;
   float: right;
-  max-width: 500px
+  max-width: 500px;
+  margin-left: 2%;
 }
 
 li:before {
