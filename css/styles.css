@@ -105,7 +105,7 @@ body {
   background: url("../img/code.jpg");
 }
 
-.aboutbanner {
+.generic-banner {
   background-color: #f0f0f0;
 }
 
@@ -219,4 +219,15 @@ h1 {
   width: 30vw;
   object-fit: contain;
   margin: auto;
+}
+
+ol li img {
+  display: block;
+  width: 30vw;
+  float: right;
+  max-width: 600px
+}
+
+h3 {
+  font-size: medium;
 }
