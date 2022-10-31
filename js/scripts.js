@@ -5,7 +5,10 @@ window.onload = function() {
   if (localStorage.getItem('darkMode') === 'true') {
     darkMode.checked = true;
     enableDarkMode()
+  } else {
+    disableDarkMode()
   }
+  setTimeout(showSwitch, 00)
   darkMode.addEventListener("change", function() {
 
     if (darkMode.checked){
@@ -20,9 +23,9 @@ window.onload = function() {
       disableDarkMode();
     }
   });
-
-
+  
   };
+
 
 function enableDarkMode() {
   document.body.style.backgroundColor = "#121212";
@@ -54,5 +57,16 @@ function disableDarkMode() {
   bodyAreas.forEach(element => {
     element.style.color = 'black';
   })
+  const genericBanners = document.querySelectorAll('.generic-banner')
+  genericBanners.forEach(element => {
+    element.classList.remove('generic-banner-dm');
+    element.classList.add('generic-banner');
+  })
   document.getElementById('dm-switch-area').classList.remove('icon-dm');
+}
+
+function showSwitch() {
+  let area = document.getElementById("dm-switch-area");
+  area.style.visibility = 'visible';
+  area.style.opacity = 1;
 }

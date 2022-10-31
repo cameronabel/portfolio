@@ -6,6 +6,11 @@ body {
   font-size: 20;
 }
 
+body {
+  background-color: #1d1d1d;
+}
+
+
 .body-container {
   width: calc(60% + 320px);
   box-sizing: border-box;
@@ -116,6 +121,7 @@ body {
 
 .generic-banner {
   background-color: #f0f0f0;
+  width: 100%;
 }
 
 .generic-banner-dm {
@@ -261,6 +267,9 @@ h3 {
   width: 70px;
   height: 35px;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .dm-zone img {
