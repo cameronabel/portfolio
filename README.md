@@ -6,8 +6,9 @@
 
 ## Technologies Used
 
-* HTML
-* CSS
+- HTML
+- CSS
+- JavaScript
 
 ## Description
 
@@ -17,9 +18,9 @@ This page serves as both an exercise in web-dev concepts and a demonstration of 
 
 This site may be accessed on [GitHub pages](https://cameronabel.github.io/portfolio/). To host this site locally:
 
-* Clone this repository to your local machine
-* Navigate to the top level of the directory
-* Open index.html in your browser
+- Clone this repository to your local machine
+- Navigate to the top level of the directory
+- Open index.html in your browser
 
 ## Known Bugs
 
